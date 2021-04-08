@@ -4,3 +4,71 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--purple-text: #6F537B; 
+}
+
+/* boostrap container */ 
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) { .container { max-width: 540px } }
+@media (min-width: 768px) { .container { max-width: 720px } }
+@media (min-width: 992px) { .container { max-width: 960px } }
+@media (min-width: 1200px) { .container { max-width: 1140px } }
+/* */
+
+.body {
+	font-family: 'OpinionPro', sans-serif;
+}
+
+.header {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E0BAD8 100%), #F9D6D6;
+	color: var(--purple-text);
+	padding: 70px 0;
+	height: 100%;
+}
+
+.header__title {
+	font-size: 67px;
+	margin-bottom: 48px;
+}
+
+.header__subtitle {
+	font-size: 23px;
+	margin-bottom: 46px;
+}
+
+.button {
+	color: var(--purple-text);
+	background-color: #fff;
+
+	padding: 20px 39px;
+	border-radius: 30px;
+
+	font-size: 14px;
+
+	text-decoration: none;
+
+	display: inline-block;
+}
+
+.link {
+	color: var(--purple-text);
+	text-decoration: none;
+}
+
+.arrow {
+	margin-left: 5px;
+}
+
+.header__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
