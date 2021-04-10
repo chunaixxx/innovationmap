@@ -30,7 +30,7 @@
 .header {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E0BAD8 100%), #F9D6D6;
 	color: var(--purple-text);
-	padding: 70px 0;
+	padding: 70px 0 35px 0;
 	height: 100%;
 }
 
@@ -63,12 +63,29 @@
 	text-decoration: none;
 }
 
-.arrow {
-	margin-left: 5px;
+.arrow-right {
+	margin-left: 8px;
 }
 
-.header__block {
+.header__next-screen-icon{
+	color: #fff;
+	font-size: 2em;
+	margin-top: 25px;
+}
+
+.flex {
 	display: flex;
+}
+
+.justify-space-between {
 	justify-content: space-between;
+	
+}
+
+.align-items-center {
 	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
 }
