@@ -10,8 +10,25 @@
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body class="body">
-		<nav class="nav">
+		<div class="menu-burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 
+		<nav class="nav">
+			<div class="nav__block">
+				<img
+					class="nav__logo"
+					src="images/logo.png" 
+					alt="Агенство инноваций города Москвы"
+				>
+
+				<a href="#" class="nav__link">Подборка решений</a>
+				<a href="#" class="nav__link">Основные выводы<br> исследований</a>
+			</div>
+
+			<a href="#" class="nav__download-link">Скачать исследование</a>
 		</nav>
 
 		<header class="header">
@@ -20,8 +37,8 @@
 				<h2 class="header__subtitle">Агентство инноваций Москвы подготовило обзор российских и международных продуктов для развития отрасли</h2>
 
 				<div class="flex justify-space-between align-items-center">
-					<a href="#" class="button">Добавить решение</a>
-					<a href="#" class="link flex align-items-center">
+					<a href="#" class="header__add-solution">Добавить решение</a>
+					<a href="#" class="header__download-link flex align-items-center">
 						Скачать исследование
 						<img 
 							class="arrow-right"
