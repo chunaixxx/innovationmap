@@ -11,6 +11,7 @@
 	--black-text: #222;
 	--black-bg: #333;
 	--white-bg: #fff;
+	--white-text: #fff;
 }
 
 .body {
@@ -76,7 +77,7 @@ a {
 
 .button--white {
 	color: var(--purple);
-	background-color: #fff;
+	background-color: var(--white-bg);
 }
 /* /general */
 
@@ -104,7 +105,7 @@ a {
 	width: 48px;
 	height: 48px;
 	border-radius: 100%;
-	background: #fff;
+	background-color: var(--white-bg);
 
 	position: fixed;
 	z-index: 3;
@@ -159,7 +160,7 @@ a {
 	position: fixed;
 	z-index: 2;
 
-	background: #fff;
+	background-color: var(--white-bg);
 	width: 280px;
 	height: 100%;
 
@@ -194,18 +195,29 @@ a {
 	margin-top: 20px;
 }
 
-.nav__download-link {
+.button-border {
 	align-self: center;
 	border: 1px solid var(--pink);
 	color: var(--black-text);
 	padding: 10px 25px;
 	border-radius: 20px;
+	display: inline-block;
 
 	position: relative;
 	overflow: hidden;
+
+	transition: color .3s ease;
 }
 
-.nav__download-link:before {
+.button-border--black {
+	border: 1px solid var(--black-bg);
+}
+
+.button-border--black:hover {
+	color: var(--white-bg);
+}
+
+.button-border:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -221,11 +233,15 @@ a {
 	transform: translateY(100%);
 }
 
-.nav__download-link:hover:before {
+.button-border--black:before {
+	background: var(--black-bg);
+}
+
+.button-border:hover:before {
 	transform: translateY(0%);
 }
 
-.nav__download-text {
+.button-border__text {
 	position: relative;
 	z-index: 2;
 }
@@ -278,7 +294,7 @@ a {
 }
 
 .header__next-screen-icon{
-	color: #fff;
+	color: var(--white-text);
 	width: 40px;
 	margin-top: 60px;
 
@@ -444,3 +460,28 @@ a {
 	font-size: 34px;
 }
 /* /hashtag */
+
+
+
+/* block strategy */
+.block-strategy {
+	display: flex;
+	margin-top: 50px;
+}
+
+.block-strategy__block {
+	margin-bottom: 30px;
+}
+
+.block-strategy__title {
+	color: var(--black-text);
+	text-transform: uppercase;
+	font-size: 23px;
+	margin-bottom: 30px;
+}
+
+.block-strategy__paragraph {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+/* /block strategy */
