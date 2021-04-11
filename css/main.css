@@ -7,8 +7,9 @@
 :root {
 	--purple-text: #6F537B; 
 	--pink-bg: #F7C5C4;
-	--black-text: #000;
+	--black-text: #222;
 	--black-bg: #333;
+	--white-bg: #fff;
 }
 
 a {
@@ -209,6 +210,20 @@ a {
 	padding: 60px 0;
 }
 
+.section--white {
+	background: var(--white-bg);
+}
+
+.section--pink {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E0BAD8 100%), #F9D6D6;
+}
+
+.section__title {
+	color: var(--purple-text);
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
 .section__paragraph {
 	font-weight: 350;
 	font-size: 23px;
@@ -216,6 +231,50 @@ a {
 	margin-bottom: 35px;
 }
 
-.section--white__button {
+.card-line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+.card-line--center {
+	justify-content: center;
+}
+
+.card {
+	background: var(--white-bg);
+
+	max-width: 45%;
+	min-width: 400px;
+
+	height: 220px;
+
+	margin-bottom: 30px;
+	padding: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	color: var(--black-text);
+}
+
+.card--last {
+	margin-bottom: 0px;
+}
+
+.card__title {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.card__subtitle {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.card__link {
+	font-size: 18px;
+	text-decoration: underline;
 }
