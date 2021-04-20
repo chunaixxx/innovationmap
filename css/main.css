@@ -347,6 +347,17 @@ a {
 
 	margin-bottom: 35px;
 }
+
+.section_list-item{
+	font-weight: 350;
+	font-size: 23px;
+
+	margin-bottom: 35px;
+}
+
+.section__unordered-list{
+	margin-bottom: 35px;
+}
 /* /section */
 
 
@@ -408,6 +419,23 @@ a {
 .card__link {
 	font-size: 18px;
 	text-decoration: underline;
+}
+
+
+
+.card-paragraph{
+	text-align: center;
+
+	margin-top: 60px;
+
+	font-weight: normal;
+	font-size: 27px;
+}
+
+.button-card{
+	margin-top: 20px;
+	position: relative;
+	left: 38%;
 }
 /* /card */
 
