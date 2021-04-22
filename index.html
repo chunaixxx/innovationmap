@@ -53,13 +53,13 @@
 					</a>
 				</div>
 
-				<div class="flex justify-center">
+				<a onclick="document.querySelector('footer').scrollIntoView()" class="flex justify-center">
 					<img 
 						class="header__next-screen-icon"
 						src="images/arrow-next-screen.png" 
 						alt="Следующий экран"
 					>
-				</div>	
+				</a>	
 			</div>
 		</header>
 
@@ -68,19 +68,13 @@
 				<!-- да -->
 				<p class="section__paragraph">Один из ключевых приоритетов Москвы – обеспечение равенства возможностей и равного доступа к инфраструктуре и сервисам для всех категорий граждан, 
 					в том числе уязвимых групп населения. Традиционные инструменты не всегда эффективны, поэтому Москва постоянно находится в поиске новых решений современных вызовов.</p>
-				<p class="section__paragraph">Анализ международного опыта показывает, что для решения данной проблемы <strong>мировые города выбирают комплексный подход с опорой на инновационные технологии</strong>, в котором выделяются четыре основные задачи:
-				<ul>
-					<li class="section_list-item"><strong>Расширение возможностей уязвимых групп населения</strong>, повышение самостоятельности и вовлечение в общественную жизнь за счет разработки и внедрения новых технологических решений.</li>
-					<li class="section_list-item"><strong>Повышение эффективности работы организаций социальной поддержки</strong>, в том числе за счет внедрения инноваций. </li>
-					<li class="section_list-item">Развитие скоординированной <strong>экосистемы социальной поддержки</strong> за счет вовлечения и <strong>выстраивания партнерств.</strong></li>
-					<li class="section_list-item"><strong>Регулярный мониторинг и оценка эффективности</strong> реализуемых программ, тестирование новых решений перед масштабной реализацией. </li>
-				</ul>
-			
-				<div class="flex justify-space-between">
-					<a href="#" class="button button--pink section--white__button">Основные задачи</a>
-					<a href="#" class="button button--pink section--white__button">Технологические решения</a>
-					<a href="#" class="button button--pink section--white__button">Организационные решения</a>
-				</div>
+				<p class="section__paragraph">Анализ международного опыта показывает, что для решения данной проблемы <span class="fw500">мировые города выбирают комплексный подход с опорой на инновационные технологии</span>, в котором выделяются четыре основные задачи:
+				<ol class="num-list">
+					<li class="num-list__item"><span class="fw500">Расширение возможностей уязвимых групп населения</span>, повышение самостоятельности и вовлечение в общественную жизнь за счет разработки и внедрения новых технологических решений.</li>
+					<li class="num-list__item"><span class="fw500">Повышение эффективности работы организаций социальной поддержки</span>, в том числе за счет внедрения инноваций. </li>
+					<li class="num-list__item">Развитие скоординированной <span class="fw500">экосистемы социальной поддержки</span> за счет вовлечения и <span class="fw500">выстраивания партнерств.</span></li>
+					<li class="num-list__item"><span class="fw500">Регулярный мониторинг и оценка эффективности</span> реализуемых программ, тестирование новых решений перед масштабной реализацией. </li>
+				</ol>
 				<!-- да -->
 			</div>
 		</section>
@@ -160,9 +154,11 @@
 
 
 				<!-- да -->
-				<div class="card-subtitle">
-					<p class="card-paragraph">У вас есть инновационный продукт для социальной сферы?</p>
-					<a href="https://innovationmap.innoagency.ru/add/" class="button button--white button-card">Добавить решение</a>
+				<div class="block-center">
+					<p class="block-center__text">У вас есть инновационный продукт для социальной сферы?</p>
+					<a href="https://innovationmap.innoagency.ru/add/" 
+					   class="button button--white button-card"
+					>Добавить решение</a>
 				</div>
 				<!-- да -->
 
@@ -180,7 +176,7 @@
 						<h4 class="card__subtitle">3 млн пенсионеров проживает в Москве (28% от общей численности населения), +5 п.п. прирост за последние 10 лет</h4>		
 					</div>
 
-					<div class="flex justify-space-between mt30">
+					<div class="flex mt20">
 						<a class="card__link" href="#">Российские решения</a>
 						<a class="card__link" href="#">Международные практики</a>
 					</div>
@@ -192,19 +188,19 @@
 						<h4 class="card__subtitle">~10% населения Москвы (свыше 1 млн. чел., из них - 73% люди старше 60 лет), 72% уровень безработицы среди инвалидов трудоспособного возраста в Москве, тогда как среди экономически активного населения - 2%</h4>		
 					</div>
 
-					<div class="flex justify-space-between mt30">
+					<div class="flex mt20">
 						<a class="card__link" href="#">Российские решения</a>
 						<a class="card__link" href="#">Международные практики</a>
 					</div>
 				</div>
 
-				<div class="card card--simple mt50">
+				<div class="card card--simple">
 					<div class="card__main">
 						<h3 class="card__title color-purple">Органы власти и организации, занимающиеся социальной защитой населения<h3>
 						<h4 class="card__subtitle">Рост числа представителей социально-незащищенных групп граждан и снижение популярности работы в социальной сфере приводит к увеличению нагрузки на систему социальной защиты. При этом у жителей растет запрос на получение персонализированных и более инновационных услуг.</h4>		
 					</div>
 
-					<div class="flex justify-space-between mt30">
+					<div class="flex mt20">
 						<a class="card__link" href="#">Российские решения</a>
 						<a class="card__link" href="#">Международные практики</a>
 					</div>
@@ -269,7 +265,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<div class="footer__top">
 					<div class="flex">
