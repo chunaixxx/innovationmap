@@ -16,3 +16,5 @@ const makeModal = modalSel => {
 }
 
 makeModal('#modal-1');
+makeModal('#modal-2');
+
