@@ -661,6 +661,9 @@ a {
 	background: #fff;
 	position: relative;
 	z-index: 20;
+
+	max-height: 80vh;
+	overflow-y: scroll;
 }
 
 .modal__bg {
