@@ -90,6 +90,9 @@ a {
 	color: var(--purple);
 	background-color: var(--white-bg);
 }
+.button--header{
+	margin-right: 50px;
+}
 /* /general */
 
 
@@ -804,6 +807,12 @@ a {
 
 	#modal-1-btn{
 		margin-right: 0;
+	}
+
+
+
+	.button--header{
+		margin-right: 0px;
 	}
 	/* /hashtag */
 }
