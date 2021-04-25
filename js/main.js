@@ -1,11 +1,10 @@
-const burgerEl = document.querySelector('.menu-burger'),
-	  navEl = document.querySelector('.nav');
+// menu
+const burger = document.querySelector('.menu-burger');
+burger.addEventListener('click', () => burger.classList.toggle('active'));
+// end menu
 
-burgerEl.addEventListener('click', e => {
-	burgerEl.classList.toggle('active');
-	navEl.classList.toggle('active')
-});
 
+// modals 
 const makeModal = modalSel => {
 	const modalEl = document.querySelector(modalSel);
 		  btnEl = document.querySelector(modalSel + '-btn'),
@@ -17,11 +16,18 @@ const makeModal = modalSel => {
 
 makeModal('#modal-1');
 makeModal('#modal-2');
+// end modals
 
-const nextScreen = document.querySelector('.next-screen-link')
+
+// header next screen
+const nextScreenLink = document.querySelector('.next-screen-link')
 const header = document.querySelector('.header');
 
-nextScreen.addEventListener('click', e => window.scrollTo(0, header.clientHeight));
+nextScreenLink.addEventListener('click', e => window.scrollTo(0, header.clientHeight));
+// end header next screen
 
-const buttonTop = document.querySelector('.buttonTop');
-buttonTop.addEventListener('click', e => window.scrollTo(0, 0))
+
+// button scroll top
+const buttonTopIcon = document.querySelector('.buttonTop');
+buttonTopIcon.addEventListener('click', e => window.scrollTo(0, 0));
+// end button scroll top
