@@ -26,12 +26,14 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTL7RM7"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	
-		<div class="menu-burger">
+		<button class="buttonTop">132</button>
+
+
+		<divW class="menu-burger">
 			<div></div>
 			<div></div>
 			<div></div>
-		</div>
+		</divW>
 
 		<nav class="nav">
 			<div class="nav__block">
@@ -54,14 +56,17 @@
 
 		<header class="header">
 			<div class="container header__inner">
-				<a href=" https://innovationmap.innoagency.ru/" class="header__download-link">← На главную</a>
+				<a 
+					href="https://innovationmap.innoagency.ru/" 
+					class="header__download-link"
+				>←<span class="header__download-link-text">На главную</span></a>
 				<h1 class="header__title">Инновационные решения<br> в сфере социальной <br>защиты населения</h1>
 				<h2 class="header__subtitle">Агентство инноваций Москвы подготовило обзор российских<br> и международных продуктов для развития отрасли</h2>
 
 				<div class="header__buttons flex justify-space-between align-items-center">
 					<a href="https://innovationmap.innoagency.ru/add/" class="button button--white">Добавить решение</a>
 					<a href="https://innoagency.ru/files/Social_Protection_Innovations_AIM_2020.pdf" class="header__download-link flex align-items-center">
-						Скачать исследование
+						<span class="header__download-link-text">Скачать исследование</span>
 						<img 
 							class="arrow-right"
 							src="images/arrow-right.png" 
@@ -70,7 +75,7 @@
 					</a>
 				</div>
 
-				<a onclick="document.querySelector('footer').scrollIntoView()" class="flex justify-center">
+				<a class="flex justify-center next-screen-link">
 					<img 
 						class="header__next-screen-icon"
 						src="images/arrow-next-screen.png" 
@@ -187,9 +192,9 @@
 				<h2 class="section__title">Целевые аудитории</h2>
 				<p class="section__paragraph">Для Москвы характерны те же вызовы и социальные изменения, что и для большинства остальных городов и стран мира.</p>
 
-				<div class="card card--simple mt50">
-					<div class="card__main1">
-						<h3 class="card__title color-purple">Старшее поколение<h3>
+				<div class="card card--w100 mt50">
+					<div class="card__main">
+						<h3 class="card__title">Старшее поколение<h3>
 						<h4 class="card__subtitle">3 млн чел. в возрасте старше 60 лет проживает в Москве (24,3% от общей численности населения), +12% прирост доли лиц старшего возраста в общей численности за 2016-2020</h4>		
 						
 						<div class="flex mt20">
@@ -200,9 +205,9 @@
 					</div>
 				</div>
 
-				<div class="card card--simple">
-					<div class="card__main2">
-						<h3 class="card__title color-purple">Люди с ограниченными возможностями<h3>
+				<div class="card card--w100">
+					<div class="card__main">
+						<h3 class="card__title">Люди с ограниченными возможностями<h3>
 						<h4 class="card__subtitle">1 млн взрослых с инвалидностью проживает в Москве (9,5% от общей численности, из них 72% старше 60 лет), 73% инвалидов в трудоспособном возрасте не работает</h4>		
 					
 						<div class="flex mt20">
@@ -213,9 +218,9 @@
 					</div>
 				</div>
 
-				<div class="card card--simple">
-					<div class="card__main3">
-						<h3 class="card__title color-purple">Органы власти и организации, занимающиеся социальной защитой населения<h3>
+				<div class="card card--w100">
+					<div class="card__main">
+						<h3 class="card__title">Органы власти и организации, занимающиеся социальной защитой населения<h3>
 						<h4 class="card__subtitle">Рост числа представителей социально-незащищенных групп граждан и снижение популярности работы в социальной сфере приводит к увеличению нагрузки на систему социальной защиты. При этом у жителей растет запрос на получение персонализированных и более инновационных услуг.</h4>		
 						
 						<div class="flex mt20">
@@ -270,10 +275,6 @@
 				</ol>
 
 				<!-- modal 1 -->
-				<button href="#" class="button-border button-border--black" id="modal-1-btn">
-					<span class="button-border__text">Рынок AssistiveTech</span>
-				</button>
-
 				<div class="modal-wrapper" id="modal-1">
 					<div class="modal-wrapper__bg">
 						<div class="modal__close">
@@ -299,13 +300,17 @@
 						</div>
 					</div>
 				</div>
-				<!-- /modal 1 -->
 
-				<!-- /modal 2 -->
+				<div class="flex justify-center">
+					<button href="#" class="button-border button-border--black" id="modal-1-btn">
+						<span class="button-border__text">Рынок AssistiveTech</span>
+					</button>
+	
+					<button href="#" class="button-border button-border--black" id="modal-2-btn">
+						<span class="button-border__text">Рынок AgeTech</span>
+					</button>
+				</div>
 
-				<button href="#" class="button-border button-border--black" id="modal-2-btn">
-					<span class="button-border__text">Рынок AgeTech</span>
-				</button>
 
 				<div class="modal-wrapper" id="modal-2">
 					<div class="modal-wrapper__bg">
