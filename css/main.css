@@ -68,6 +68,7 @@ a {
 
 .button {
 	padding: 20px 55px;
+	border: 0;
 	border-radius: 30px;
 	font-size: 16px;
 	display: inline-block;
@@ -193,7 +194,6 @@ a {
 }
 
 .nav {
-	
 	width: 280px;
 	height: 100%;
 	padding: 75px 25px;
@@ -716,18 +716,15 @@ a {
 	transform: rotate(-45deg);
 }
 
-#modal-1-btn{
-	border:0;
-	margin-right:10px;
+.modal__button-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-#modal-2-btn{
-	border:0;
-	margin-top:10px
-}
-
-.modal__button{
-	display:flex;
+.modal-button {
+	margin: 20px;
+	min-width: 300px;
 }
 /* /modal */
 
@@ -761,10 +758,6 @@ a {
 	.modal__button {
 		flex-direction: column;
 		align-items:center;
-	}
-
-	#modal-1-btn{
-		margin-right: 0;
 	}
 
 	.button--header{
