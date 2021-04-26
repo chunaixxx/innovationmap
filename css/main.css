@@ -339,7 +339,11 @@ a {
 	width: 100%;
 }
 
-.header__next-screen-icon{
+.next-screen-link {
+	cursor: pointer;
+}
+
+.next-screen-link__icon {
 	color: var(--white-text);
 
 	width: 45px;
