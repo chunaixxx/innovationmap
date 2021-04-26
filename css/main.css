@@ -6,8 +6,10 @@
 }
 
 :root {
-	--purple: #6F537B; 
+	--purple: #6F537B;
+	--purple-rgb: 111, 83, 123;
 	--pink: #F7C5C4;
+	--pink-rgb: 247, 197, 196;
 	--black-text: #222;
 	--black-bg: #222;
 	--grey: #aaa;
@@ -58,6 +60,10 @@ a {
 	margin-top: 50px;
 }
 
+.mr20 {
+	margin-right: 20px;
+}
+
 .fw500 {
 	font-weight: 500;
 }
@@ -92,8 +98,8 @@ a {
 	background-color: var(--white-bg);
 }
 
-.button--header {
-	margin-right: 50px;
+.button--white-border {
+	border: 2px solid var(--white-bg);
 }
 
 .num-list {
@@ -318,11 +324,16 @@ a {
 .header {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E0BAD8 100%), #F9D6D6;
 	color: var(--purple);
-	
+
 	padding: 80px 0 35px 0;
 	height: 100%;
 
 	color: var(--purple);
+}
+
+.header__inner {
+	background: url(../images/InnoSocial.svg) no-repeat 680px 0px;
+	background-size: 400px;
 }
 
 .header__title {
@@ -336,6 +347,10 @@ a {
 	max-width: 1000px;
 
 	font-weight: normal;
+}
+
+.header__button:not(:last-child) {
+	margin-right: 20px;
 }
 
 .link {
@@ -446,6 +461,11 @@ a {
 	color: var(--black-text);
 
 	box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, .05);
+	transition: box-shadow .3s ease;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 8px 5px rgba(var(--purple-rgb), .2);
 }
 
 .card--w100 {
@@ -548,9 +568,9 @@ a {
 }
 
 .hashtag__element-2 {
-	top: 10%;
+	top: 20%;
 	left: 28%;
-	font-size: 3.6em;
+	font-size: 2em;
 }
 
 .hashtag__element-3 {
@@ -740,6 +760,14 @@ a {
 }
 
 @media (max-width: 991px) {
+	.header__button {
+		margin-bottom: 20px;
+	}
+
+	.header__button:not(:last-child) {
+		margin-right: 0px;
+	}
+
 	.card-line {
 		flex-direction: column;
 		align-items: center;
@@ -771,12 +799,22 @@ a {
 }
 
 @media (max-width: 768px) {
+	.header__inner {
+		background: transparent;
+	}
+
 	.header__title {
 		font-size: 45px;
 	}
 
-	.header__buttons {
+	.header__links {
 		flex-direction: column;
+	}
+
+	.header__buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.button--header {
@@ -828,10 +866,6 @@ a {
 }
 
 @media (max-width: 500px) {
-	.link {
-		margin-top: 20px;
-	}
-
 	.hashtag {
 		font-size: 8px;
 	}
