@@ -756,12 +756,23 @@ a {
 /* /modal */
 
 @media (max-width: 1199px) {
+	.header__inner {
+		background-position: 650px 50px;
+		background-size: 300px;
+	}
+
+
 	.hashtag {
 		font-size: 9px;
 	}
 }
 
 @media (max-width: 991px) {
+	.header__inner {
+		background: transparent;
+	}
+
+
 	.header__button {
 		margin-bottom: 20px;
 	}
@@ -801,10 +812,6 @@ a {
 }
 
 @media (max-width: 768px) {
-	.header__inner {
-		background: transparent;
-	}
-
 	.header__title {
 		font-size: 45px;
 	}
