@@ -765,10 +765,6 @@ a {
 		align-items:center;
 	}
 
-	.button--header{
-		margin-right: 0px;
-	}
-
 	.hashtag {
 		font-size: 7px;
 	}
@@ -777,6 +773,15 @@ a {
 @media (max-width: 768px) {
 	.header__title {
 		font-size: 45px;
+	}
+
+	.header__buttons {
+		flex-direction: column;
+	}
+
+	.button--header {
+		margin-right: 0px;
+		margin-bottom: 30px;
 	}
 
 	.hashtag {
@@ -823,10 +828,6 @@ a {
 }
 
 @media (max-width: 500px) {
-	.header__buttons {
-		flex-direction: column;
-	}
-
 	.link {
 		margin-top: 20px;
 	}
