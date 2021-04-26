@@ -349,6 +349,10 @@ a {
 	font-weight: normal;
 }
 
+.header__buttons {
+	display: flex;
+}
+
 .header__button:not(:last-child) {
 	margin-right: 20px;
 }
