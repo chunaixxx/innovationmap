@@ -482,6 +482,8 @@ a {
 .card__link {
 	font-size: 18px;
 	text-decoration: underline;
+
+	margin-top: 15px;
 }
 
 .card__link:not(:last-child) {
