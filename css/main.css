@@ -313,17 +313,17 @@ a {
 	font-weight: normal;
 }
 
-.header__download-link {
+.link {
 	font-size: 18px;
 	position: relative;
 }
 
-.header__download-link-text {
+.link__text {
 	position: relative;
 	margin: 0 5px;
 }
 
-.header__download-link-text:before {
+.link__text:before {
 	height: 1px;
 	width: 0%;
 	background: var(--purple);
@@ -335,7 +335,7 @@ a {
 	left: 2px;
 }
 
-.header__download-link .header__download-link-text:hover:before {
+.link .link__text:hover:before {
 	width: 100%;
 }
 
@@ -784,7 +784,7 @@ a {
 		flex-direction: column;
 	}
 
-	.header__download-link {
+	.link {
 		margin-top: 20px;
 	}
 
