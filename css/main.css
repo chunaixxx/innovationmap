@@ -780,7 +780,45 @@ a {
 	}
 
 	.hashtag {
-		font-size: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.hashtag__element {
+		position: static;
+		margin-top: 20px;
+	}
+
+	.hashtag__element-1 {
+		text-align: center;
+	}
+
+	.hashtag__element-2 {
+		text-align: right;
+	}
+	
+	.hashtag__element-3 {
+		text-align: left;
+	}
+
+	.hashtag__element-4 {
+		text-align: center;
+	}
+
+	.hashtag__element-5 {
+		text-align: right;
+	}
+
+	.hashtag__element-6 {
+		text-align: left;
+	}
+
+	.hashtag__element-7 {
+		text-align: center;
+	}
+
+	.hashtag__element-8 {
+		text-align: right;
 	}
 }
 
@@ -794,6 +832,14 @@ a {
 	}
 
 	.hashtag {
-		font-size: 4px;
+		font-size: 8px;
+	}
+
+	.hashtag__element-3 {
+		font-size: 2.5em;
+	}
+
+	.hashtag__element-6 {
+		font-size: 2.5em;
 	}
 }
