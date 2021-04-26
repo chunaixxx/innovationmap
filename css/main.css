@@ -325,7 +325,7 @@ a {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E0BAD8 100%), #F9D6D6;
 	color: var(--purple);
 
-	padding: 80px 0 35px 0;
+	padding: 80px 0 50px 0;
 	height: 100%;
 
 	color: var(--purple);
@@ -377,29 +377,6 @@ a {
 
 .link .link__text:hover:before {
 	width: 100%;
-}
-
-.next-screen-link {
-	cursor: pointer;
-}
-
-.next-screen-link__icon {
-	color: var(--white-text);
-
-	width: 45px;
-	margin-top: 60px;
-
-	animation: nextScreenIconAnimation 1s infinite ease-in-out alternate;
-}
-
-@keyframes nextScreenIconAnimation {
-	from {
-		transform: translateY(0px);
-	}
-
-	to {
-		transform: translateY(10px);
-	}
 }
 /* /header */
 

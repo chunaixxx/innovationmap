@@ -18,15 +18,6 @@ makeModal('#modal-1');
 makeModal('#modal-2');
 // end modals
 
-
-// header next screen
-const nextScreenLink = document.querySelector('.next-screen-link')
-const header = document.querySelector('.header');
-
-nextScreenLink.addEventListener('click', e => window.scrollTo(0, header.clientHeight));
-// end header next screen
-
-
 // button scroll top
 const buttonTopIcon = document.querySelector('.buttonTop');
 buttonTopIcon.addEventListener('click', e => window.scrollTo(0, 0));
