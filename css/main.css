@@ -16,6 +16,7 @@
 	--white-bg: #fff;
 	--white-text: #fff;
 	--yellow-text: #ffd600;
+	--red-border: #ff7d73;
 }
 
 .body {
@@ -100,6 +101,10 @@ a {
 
 .button--white-border {
 	border: 2px solid var(--white-bg);
+}
+
+.button--red-border {
+	border: 4px solid var(--red-border);
 }
 
 .num-list {
@@ -351,6 +356,7 @@ a {
 
 .header__buttons {
 	display: flex;
+	align-items:center;
 }
 
 .header__button:not(:last-child) {
